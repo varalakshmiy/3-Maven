@@ -140,7 +140,9 @@ java 21
 --------
 
 sudo yum install java-21-openjdk-devel -y
-
+sudo amazon-linux-extras enable corretto11
+sudo yum install -y java-11-amazon-corretto
+    sudo yum install java-18-amazon-corretto-devel
 
 
 
@@ -167,6 +169,8 @@ yum install wget unzip -y
 
 
 wget https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.zip
+
+ wget https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.zip
 
 
 unzip apache-maven-3.9.10-bin.zip
